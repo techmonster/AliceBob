@@ -6,15 +6,15 @@ import java.util.Scanner;
  * Created by nathanielholloway on 9/10/16.
  * this is the Display class
  */
-public class Display {
+class Display {
     Scanner sc;
 
-    public String displayPrompt(){
+    String displayPrompt(){
         sc = new Scanner(System.in);
         System.out.println("Please enter your name: ");
         return sc.next();
     }
-    public void displayGreeting(String msg){
+    void displayGreeting(String msg){
         System.out.println(msg);
     }
 }

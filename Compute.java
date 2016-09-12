@@ -5,17 +5,17 @@ package holloway.nate.AliceBob;
  * Created by nathanielholloway on 9/10/16.
  * This is the logic class.
  */
-public class Compute {
+ class Compute {
     private Display userDisplay;
 
 
 
 
-    public Compute(){
+    Compute(){
         userDisplay = new Display();
     }
 
-    public void logic(){
+    void logic(){
         String userResponse = userDisplay.displayPrompt();
         String result = comparison(userResponse);
         userDisplay.displayGreeting(result);
